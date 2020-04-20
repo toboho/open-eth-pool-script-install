@@ -101,7 +101,7 @@ fi
 
 if ! [ -x "$(command -v node)" ]; then
     # Installing build essentials
-    apt-get install -y build-essential
+    apt-get install -y build-essential libssl-dev pkg-config 
     
     # Getting the lastest resource.
     curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
